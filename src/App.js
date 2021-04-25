@@ -1,22 +1,27 @@
-import logo from './logo.svg';
+import {ART} from 'react-native'
+import avatar from './images/me.jpg'
 import './App.css';
 
+function spawnCircle() {
+  const circle = ART.Path()
+    .move(2, 0)
+    .arc(0, 4, 2)
+    .arc(0, -4, 2)
+  
+  return circle.print()
+}
+
 function App() {
+  
+  
   return (
-    <div className="App">
+    <div className="App" onClick={spawnCircle}>
+      
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hi there!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img id="avatar" src={avatar} alt="Me"></img>
       </header>
     </div>
   );
