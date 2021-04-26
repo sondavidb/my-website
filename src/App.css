@@ -4,25 +4,73 @@ h1 {
   font-weight: normal;
 }
 
-#topText {
-  padding: 50px;
-  margin: 0px;
+header {
+  background-color: #202020;
   color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header a:hover {
+  background: #ddd;
+  color: black;
+}
+
+footer {
+  height:15vh;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  color: #808080;
+}
+
+footer p {
+  padding: 15px;
+  font-size: calc(10px + 1vmin);
+}
+
+Table {
+  border-collapse: collapse;
+  font-size: calc(10px + 1vmin);
+  width: 80%;
+  border: 5px solid #808080;
+  margin-bottom: 20px;
+}
+
+Table th, td {
+  padding: 20px;
+  border: 3px solid black;
+}
+
+Table th {
+  background-color: #303030;
+}
+
+Table td {
+  background-color: #606060;
 }
 
 .App {
-  background-color: #282c34;
+  background-color: #007FFF;
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  min-height: 50vh;
+.divType1 {
+  height:66vh;
   background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
@@ -33,40 +81,55 @@ h1 {
   color: #808080;
 }
 
-.Education {
-  min-height: 100vh;
+.divType2 {
+  height:66vh;
+  background-color: #007FFF;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   justify-content: left;
   font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  color: #F5F5F5;
 }
 
-#avatar {
+.icon {
   width: 400px;
   height: 400px;
   border-radius: 100%;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  padding:40px;
-}
-
-#bio {
-  padding: 50px;
-  text-align: left;
+  padding: 40px;
 }
 
 .heading {
-  margin-top: -10%;
+  align-self: stretch;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bodyTextType1 {
+  padding: 5px 50px 5px 50px;
+  text-align: left;
+}
+
+.bodyTextType2 {
+  padding: 5px 50px 5px 50px;
+  text-align: right;
+}
+
+#about {
+  margin-top: 30px;
+}
+
+#projects {
+  min-height:66vh;
+  background-color: #007FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  color: #F5F5F5;
+}
+
+#tproj {
+  justify-content: center;
 }
